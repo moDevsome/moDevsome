@@ -9,6 +9,7 @@ I like to build eficient website and cool web application.
 
 * HTML5
 * CSS / SCSS / Web animation
+* Design / Wireframe integration
 * Vanilla JS
 * jQuery
 * VueJS (beginner)
@@ -16,6 +17,8 @@ I like to build eficient website and cool web application.
 * Symfony 5.X (beginner)
 * C# / .NET (beginner)
 * SQL Transaction
+* Git
+* Webpack
 
 
 <!---
