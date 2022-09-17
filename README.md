@@ -18,7 +18,7 @@ I like to build eficient website and cool web application.
 * C# / .NET (beginner)
 * SQL Transaction
 * Git
-* Webpack
+* Npm & Composer
 
 
 <!---
