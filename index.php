@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mickaël Outhier ((moDevsome))</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css?family=Exo:300,400,400i,700,800" rel="stylesheet" type="text/css"/>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Mickaël Outhier ((moDevsome))</h1>
+            <ul>
+                <li>
+                    <a href="https://www.mickael-outhier.fr/" title="Mickaël Outhier personnal website">
+                        <i class="fa-solid fa-book-atlas"></i> Personnal website
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/moDevsome" title="Mickaël Outhier github profil">
+                        <i class="fa-brands fa-github"></i> Github profil
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <div class="project-card project-card--library">
+                <a href="https://github.com/moDevsome/moFilesManager" title="Mickael Outhier moFilesManager PHP Library">
+                    moFilesManager
+                </a>
+                <div class="project-card__text">
+                    <p>A small library for handling files and folders more easier.</p>
+                </div>
+                <div class="project-card__tech">
+                    <ul>
+                        <li><i class="fa-brands fa-php"></i> PHP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-card project-card--web">
+                <a href="https://github.com/moDevsome/Exoplanet-Query" title="Mickael Outhier Exoplanet-Query PHP Symfony app">
+                    Exoplanet-Query
+                </a>
+                <div class="project-card__text">
+                    <p>A small project wich running under Symfony.</p>
+                </div>
+                <div class="project-card__tech">
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i> HTML</li><li><i class="fa-brands fa-css3-alt"></i> CSS</li><li><i class="fa-brands fa-js"></i> JS</li><li><i class="fa-brands fa-php"></i> PHP</li><li><i class="fa-brands fa-symfony"></i> Symfony</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-card project-card--android">
+                <a href="https://github.com/moDevsome/CalcAndr" title="Mickael Outhier calculator app">
+                    CalcAndr
+                </a>
+                <div class="project-card__text">
+                    <p>A calculator application for Android, written in Kotlin.</p>
+                </div>
+                <div class="project-card__tech">
+                    <ul>
+                        <li><i class="fa-solid fa-robot"></i> Kotlin</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                <i class="fa-sharp fa-solid fa-copyright"></i> Mickaël Outhier <?php echo date('Y');?>
+            </p>
+        </footer>
+        <script>
+            document.querySelectorAll('body > main > div.project-card').forEach(el => {
+                el.addEventListener('click', (el) => {
+                    // Thanks to https://gomakethings.com/climbing-up-the-dom-tree-with-vanilla-javascript/
+                    document.location.href = el.target.closest('div.project-card').firstElementChild.attributes.href.nodeValue;
+                })
+            })
+        </script>
+    </body>
+</html>

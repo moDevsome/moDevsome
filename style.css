@@ -1,0 +1,104 @@
+/** https://www.schemecolor.com/blue-with-brown.php **/
+
+:root {
+    --blue: #0f4484;
+    --light-blue: #1E96A6;
+    --black: #000000;
+    --brown: #795D43;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    max-width: 1112px;
+    margin: auto;
+
+    font-size: 16px;
+    font-family: "Exo", arial, sans-serif;
+    background-image: url('img/main-bg.png');
+}
+
+body > header {
+	margin-bottom: 8%;
+}
+body > header > h1 {
+    font-size: 38px;
+    text-align: center;
+    color: var(--blue);
+}
+
+body > header > ul {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+body > header > ul > li {
+    width: 50%;
+	list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+	text-align: center;
+}
+body > header > ul > li > a {
+    color: var(--light-blue);
+}
+body > header > ul > li > a:hover {
+    color: var(--black);
+}
+
+body > main {
+    width: 100%;
+    margin-bottom: 6%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+body > main > div.project-card {
+    position: relative;
+    width: 350px;
+    height: 180px;
+    background-color: #F6F5F3;
+    border: 2px solid #B5D9D9;
+    border-radius: 10px 8px 8px 8px;
+    cursor: pointer;
+}
+body > main > div.project-card > a {
+    display: block;
+    width: 80%;
+    margin: 10px auto 8px 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--blue);
+}
+body > main > div.project-card > div.project-card__text {
+    width: 80%;
+    margin: 0 auto 24px 12px;
+}
+body > main > div.project-card > div.project-card__tech {
+    width: calc(96% - 12px);
+    margin: 0 auto 0 12px;
+    padding-top: 6px;
+    border-top: 1px solid var(--brown);
+}
+body > main > div.project-card > div.project-card__tech > ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+body > main > div.project-card > div.project-card__tech > ul > li {
+    display: inline-block;
+    list-style: none;
+}
+footer {
+    text-align: center;
+}
