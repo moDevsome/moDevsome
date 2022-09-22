@@ -70,32 +70,43 @@ body > main > div.project-card {
     background-color: #F6F5F3;
     border: 2px solid #B5D9D9;
     border-radius: 10px 8px 8px 8px;
-    cursor: pointer;
+    overflow: hidden;
 }
 body > main > div.project-card > a {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    padding-left: 12px;
     display: block;
-    width: 80%;
-    margin: 10px auto 8px 12px;
     font-size: 18px;
     font-weight: 600;
     color: var(--blue);
 }
-body > main > div.project-card > div.project-card__text {
+body > main > div.project-card > div.project-card-inner {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    z-index: 1;
+    width: 100%;
+}
+body > main > div.project-card > div.project-card-inner > div.project-card-inner__text {
     width: 80%;
     margin: 0 auto 24px 12px;
 }
-body > main > div.project-card > div.project-card__tech {
+body > main > div.project-card > div.project-card-inner > div.project-card-inner__tech {
     width: calc(96% - 12px);
     margin: 0 auto 0 12px;
     padding-top: 6px;
     border-top: 1px solid var(--brown);
 }
-body > main > div.project-card > div.project-card__tech > ul {
+body > main > div.project-card > div.project-card-inner > div.project-card-inner__tech > ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
-body > main > div.project-card > div.project-card__tech > ul > li {
+body > main > div.project-card > div.project-card-inner > div.project-card-inner__tech > ul > li {
     display: inline-block;
     list-style: none;
 }
