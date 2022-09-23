@@ -73,8 +73,20 @@ body > main > div.project-card {
     border-color: var(--light-blue);
     border-radius: 10px 8px 8px 8px;
     overflow: hidden;
+    background-position: calc(100% - 10px) 10px;
+    background-size: 22px;
+    background-repeat: no-repeat;
 
     transition: border-color 400ms 100ms;
+}
+body > main > div.project-card.project-card--android {
+    background-image: url('/img/android.svg');
+}
+body > main > div.project-card.project-card--library {
+    background-image: url('/img/puzzle-piece.svg');
+}
+body > main > div.project-card.project-card--web {
+    background-image: url('/img/globe.svg');
 }
 body > main > div.project-card > a {
     position: absolute;
