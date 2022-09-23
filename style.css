@@ -68,9 +68,13 @@ body > main > div.project-card {
     width: 350px;
     height: 180px;
     background-color: #F6F5F3;
-    border: 2px solid #B5D9D9;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--light-blue);
     border-radius: 10px 8px 8px 8px;
     overflow: hidden;
+
+    transition: border-color 400ms 100ms;
 }
 body > main > div.project-card > a {
     position: absolute;
@@ -83,6 +87,8 @@ body > main > div.project-card > a {
     font-size: 18px;
     font-weight: 600;
     color: var(--blue);
+
+    transition: color 250ms;
 }
 body > main > div.project-card > div.project-card-inner {
     position: absolute;
@@ -109,6 +115,13 @@ body > main > div.project-card > div.project-card-inner > div.project-card-inner
 body > main > div.project-card > div.project-card-inner > div.project-card-inner__tech > ul > li {
     display: inline-block;
     list-style: none;
+}
+body > main > div.project-card:hover {
+    border-color: var(--blue);
+    box-shadow: 0 0 4px var(--light-blue);
+}
+body > main > div.project-card:hover > a {
+    color: #412518;
 }
 footer {
     text-align: center;
