@@ -122,7 +122,8 @@ body > main > div.project-card > div.project-card-inner > div.project-card-inner
 body > main > div.project-card > div.project-card-inner > div.project-card-inner__tech > ul {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: left;
+    gap: 11px;
 }
 body > main > div.project-card > div.project-card-inner > div.project-card-inner__tech > ul > li {
     display: inline-block;
